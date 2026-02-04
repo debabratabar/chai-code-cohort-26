@@ -6,6 +6,7 @@ body{
     font-family: Arial, Helvetica, sans-serif ;
 }
 
+
 nav{
     position: sticky;
     display: flex;
@@ -15,6 +16,10 @@ nav{
     width: 80%;
     /* border: 2px solid red; */
     margin: auto;
+      background-color: #14120b;
+      position: sticky;
+    top: 0;
+    padding: 10px 0px 10px 0px ;
     
 }
 
