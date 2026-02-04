@@ -175,9 +175,10 @@ nav div {
     font-size: 13px;
 }
 
-#feature-child1 a{
+#feature-child1 a , #changelog a , #use-case-child1 a{
     text-decoration: none;
     color: red;
+    font-size: 10px;
 }
 
 
@@ -186,6 +187,89 @@ nav div {
     width: 100%;
     border-radius: 3px;
 
+}
+
+
+#use-case{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 80%;
+    margin: 70px auto;
+    gap: 10px;
+
+}
+
+#use-case-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#use-case-child1 { 
+    display: flex;
+    background-color: #1b1913;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid  #242119;
+    border-radius: 3px;
+}
+
+#use-case #text{
+    font-size: 14px;
+}
+
+#changelog{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 80%;
+    margin: 70px auto;
+    gap:16px;
+
+}
+
+#changelog #text{
+    font-size: 14px;
+}
+
+#changelog-cards{ 
+    display: flex;
+    justify-content:stretch;
+    align-items: stretch;
+    gap: 10px;
+
+}
+
+#changelog-cards-child{ 
+    display: flex;
+    flex-direction: column;
+    width: 1000%;
+    justify-content: center;
+    background-color: #1b1913;
+    padding: 10px 30px 10px 10px;
+    border-radius: 4px;
+    gap: 10px;
+}
+
+
+#testimonial{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 70px auto;
+}
+
+#testimonial #text{
+    font-size: 16px;
+}
+
+#actual-review{
+    display: grid;
 }
 
 
