@@ -49,6 +49,10 @@ nav div {
 
 }
 
+#nav-item3 { 
+    gap: 10px;
+}
+
 #prim-btn {
     border: 1px solid #FFFFFF ;
     border-radius: 20px;
@@ -182,4 +186,30 @@ nav div {
     width: 100%;
     border-radius: 3px;
 
+}
+
+
+#final-cta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#team-section{ 
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    /* border: 2px solid red; */
+    margin: 70px auto ;
+    gap: 10px;
+}
+
+#team-section #text {
+    font-size: 20px;
+}
+
+#team-section div img {
+    margin-top: 20px;
+    width: 100%;
 }
