@@ -78,7 +78,7 @@ nav div {
     flex-direction: column;
     width: 80%;
     /* border: 2px solid red; */
-    margin: 70px auto;
+    margin: 70px auto ;
     gap: 10px;
 }
 #hero-section div {
@@ -102,4 +102,41 @@ nav div {
 #hero-section div img {
     margin-top: 20px;
     width: 100%;
+}
+
+
+#trust-section { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    /* border: 2px solid red; */
+    margin: 70px auto;
+    gap: 10px;
+}
+
+#truct-section div {
+    font-size: 600px;
+}
+#trust-cards{
+    display: flex;
+    justify-content: space-evenly;
+    /* margin: 80% auto; */
+    gap: 10px;
+}
+
+#trust-cards-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1b1913;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 3px;
+}
+
+
+#trust-cards-child img{
+    width: 30%;
 }
