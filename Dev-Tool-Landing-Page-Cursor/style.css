@@ -7,6 +7,7 @@ body{
 }
 
 nav{
+    position: sticky;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -14,34 +15,39 @@ nav{
     width: 80%;
     /* border: 2px solid red; */
     margin: auto;
-
-
+    
 }
 
 
 nav div {
     display: flex;
+    padding: 8px;
     
 }
 
 #icon-img{
-    width: 20px;
+    width: 24px;
 }
 #brand-img{
     width: 60px;
 }
 
+#nav-item1{
+    display: flex;
+    gap: 4px;
+}
+
 #nav-item2{
     display: flex;
     justify-content: space-evenly;
-    gap: 15px;  
+    gap: 20px;  
     align-items: center;
 }
 
 #nav-item2 a {
     text-decoration: none;
     color: #FFFFFF;
-    font-size: 8px;
+    font-size: 12px;
 
 }
 #nav-item2 a:hover {
@@ -53,11 +59,13 @@ nav div {
     gap: 10px;
 }
 
+
+
 #prim-btn {
-    border: 1px solid #FFFFFF ;
+    border: 1px solid #4f4d4d ;
     border-radius: 20px;
     padding:  2px 8px 2px 8px;
-    font-size: 8px;
+    font-size: 12px;
 }
 
 #prim-btn:hover {
@@ -68,7 +76,7 @@ nav div {
     background-color: #FFFFFF;
     border-radius: 20px;
     padding: 2px 8px 2px 8px;
-    font-size: 8px;
+    font-size: 12px;
     color: #000000;
 }
 
@@ -86,7 +94,7 @@ nav div {
     gap: 10px;
 }
 #hero-section div {
-    font-size: 14px;
+    font-size: 18px;
 }
 
 #download-btn {
@@ -97,9 +105,9 @@ nav div {
     text-decoration: none;
     background-color: #CCCCCC;
     border-radius: 20px;
-    padding: 6px 8px 6px 8px;
+    padding: 6px 12px 6px 12px;
     color: #000000;
-    font-size: 10px;
+    font-size: 14px;
 }
 
 
@@ -136,15 +144,14 @@ nav div {
     justify-content: center;
     align-items: center;
     background-color: #1b1913;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 24px;
     border: 1px solid  #242119;
     border-radius: 3px;
 }
 
 
 #trust-cards-child img{
-    width: 40%;
+    width: 60%;
 }
 
 
@@ -172,13 +179,13 @@ nav div {
 #feature-child1 #text{
     width: 40%;
     /* line-height: 16px; */
-    font-size: 13px;
+    font-size: 16px;
 }
 
 #feature-child1 a , #changelog a , #use-case-child1 a{
     text-decoration: none;
-    color: red;
-    font-size: 10px;
+    color: #f54e00;
+    font-size: 12px;
 }
 
 
@@ -202,23 +209,37 @@ nav div {
 
 #use-case-cards{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
     gap: 10px;
+}
+
+#use-case-child1 #text div {
+    font-size: 14px;
 }
 
 #use-case-child1 { 
     display: flex;
+    flex-direction: column;
     background-color: #1b1913;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 15px 10px;
     border: 1px solid  #242119;
     border-radius: 3px;
 }
 
+
+#use-case-child1 img{
+    width: 100%; 
+    height: 100%;
+}
+
 #use-case #text{
-    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 20px;
+    padding-bottom:10px ;
 }
 
 #changelog{ 
@@ -232,7 +253,7 @@ nav div {
 }
 
 #changelog #text{
-    font-size: 14px;
+    font-size: 20px;
 }
 
 #changelog-cards{ 
@@ -261,23 +282,49 @@ nav div {
     gap: 20px;
     justify-content: center;
     align-items: center;
-    margin: 70px auto;
+    margin: 90px auto;
+    width: 80%;
 }
 
 #testimonial #text{
-    font-size: 16px;
+    font-size: 24px;
 }
 
 #actual-review{
     display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    margin-bottom: 40px;
 }
 
+#actual-review-cards{ 
+    background-color: #1b1913;
+    padding: 8px;
+    padding-bottom: 15px;
+    border: 1px solid  #242119;
+    border-radius: 3px;
+    
+}
+
+#actual-review-cards p {
+    font-size: 13px;
+    margin-bottom: 40%;
+    
+}
+
+#actual-review-cards img {
+    width: 24px;
+    height: 24px;
+    display: inline;
+}
 
 #final-cta{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 60px auto 30px auto;
 }
 
 #team-section{ 
@@ -290,7 +337,7 @@ nav div {
 }
 
 #team-section #text {
-    font-size: 20px;
+    font-size: 26px;
 }
 
 #team-section div img {
