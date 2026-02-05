@@ -328,7 +328,8 @@ nav div {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 60px auto 30px auto;
+    /* margin: 60px auto 30px auto; */
+    padding: 100px ;
 }
 
 #team-section{ 
@@ -354,7 +355,7 @@ nav div {
    display: flex;
     justify-content:flex-start;
     align-items:start;
-    margin: 90px auto;
+    /* margin: 90px auto; */
     background-color: #1b1913;
     padding: 6% 10% 6% 10%; 
     /* padding-right: 10%; */
@@ -382,3 +383,35 @@ nav div {
 #highlight-card-child:hover{
     background-color: #484444;
 }
+
+#footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    background-color: #1b1913;
+    padding: 6% 10% 6% 10%;
+}
+
+#footer-section a {
+    
+    text-decoration: none;
+    color: #CCCCCC;
+    font-size: 12px;
+}
+
+#footer-section-cards{
+    display: flex;
+    justify-content:flex-start;
+    align-items:first flex-start;
+    padding-right: 20px;
+    gap: 210px;
+    
+}
+
+#footer-section-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    line-height: 26px;
+}
+
