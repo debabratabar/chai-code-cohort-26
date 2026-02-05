@@ -13,13 +13,12 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    /* width: 80%; */
     /* border: 2px solid red; */
-    margin: auto;
-      background-color: #14120b;
-      position: sticky;
+    background-color: #14120b;
+    position: sticky;
     top: 0;
-    padding: 10px 0px 10px 0px ;
+    padding: 10px 10% 10px 10% ;
     
 }
 
@@ -187,7 +186,7 @@ nav div {
     font-size: 16px;
 }
 
-#feature-child1 a , #changelog a , #use-case-child1 a{
+#feature-child1 a , #changelog a , #use-case-child1 a , #highlight a{
     text-decoration: none;
     color: #f54e00;
     font-size: 12px;
@@ -348,4 +347,38 @@ nav div {
 #team-section div img {
     margin-top: 20px;
     width: 100%;
+}
+
+
+#highlight { 
+   display: flex;
+    justify-content:flex-start;
+    align-items:start;
+    margin: 90px auto;
+    background-color: #1b1913;
+    padding: 6% 10% 6% 10%; 
+    /* padding-right: 10%; */
+    gap: 20%;
+
+
+}
+
+#highlight-card{ 
+    display: flex;
+    flex-direction: column;
+    /* background-color: #25221b; */
+    width: 50%;
+    padding: 10px;
+    gap: 10px;
+}
+
+#highlight-card-child{ 
+    gap: 10px;   
+    padding: 16px;
+    border: 1px solid  #242320;
+    border-radius: 2px;
+}
+
+#highlight-card-child:hover{
+    background-color: #484444;
 }
