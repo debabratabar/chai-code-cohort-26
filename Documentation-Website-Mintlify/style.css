@@ -2,153 +2,86 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #FFFF;
 }
 
-body{   
-    background-color: #FFFFFF;
-    color:   #14120b;
-    font-family: Arial ;
+@font-face {
+    font-family: 'mintlify-font';
+    src: url('assets/InterVariable-s.p.494bb210.ttf') format('ttf');
 }
 
 
-nav{
-    position: sticky;
+
+#first-window{
+    background-image: url('assets/bg-light.svg');
+    width: 100%;
+    height: 100%;
+}
+
+#icon-part{
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6%;
+}
+
+
+#icon-part #text{
+    font-family: 'mintlify-font';
+    font-size: 26px;
+    padding-bottom: 10px;
+}
+
+#header-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 12px 18px;
+}
+
+#left-container{
+    display: flex;
     justify-content: space-between;
+    gap: 20px;               
+    padding: 10px;              
+    /* border: 1px solid black;  */
+}
+
+#right-container{
+    display: flex;
+    gap: 10%;
+    /* border: 1px solid black;  */
+
+}
+
+#right-container div{ 
+    border-radius: 26px;
+}
+
+#navbar{
+    display: flex;
+    justify-content: center;
     align-items: center;
-    border: 2px solid red;
-    position: sticky;
-    top: 0;
-    padding: 10px 10% 10px 10% ;
-    
-}
+    gap: 18px;    
+    padding: 4px;
 
-
-nav div {
-    display: flex;
-    padding: 8px;
-    
 }
-
-#icon-img{
-    width: 104px;
-    height: 24x;
+#navbar div{
+    padding: 10px 10px;
 }
-#brand-img{
-    width: 60px;
-}
-
-#nav-item1{
-    display: flex;
-    gap: 4px;
-}
-
-#nav-item2{
-    display: flex;
-    justify-content: space-evenly;
-    gap: 20px;  
-    align-items: center;
-}
-
-#nav-item2 a {
+#navbar a{
     text-decoration: none;
-    color: #FFFFFF;
-    font-size: 12px;
-
-}
-#nav-item2 a:hover {
-    color: #CCCCCC;
-
+    font-size: 16px;
+    font-weight:500;
 }
 
 
+#navbar a:hover{
+    /* border: 2px solid #FFFFFF; */
+    padding: 6px 2px;
+    border-radius: 30px;
+    background-color: lab(100% 0 0 / .15);;
 
 
-#prim-btn {
-    border: 1px solid #4f4d4d ;
-    border-radius: 20px;
-    padding:  2px 8px 2px 8px;
-    font-size: 12px;
-}
-
-#prim-btn:hover {
-    border-color:  #CCCCCC ;
-}
-
-#sec-btn {
-    background-color: #FFFFFF;
-    border-radius: 20px;
-    padding: 2px 8px 2px 8px;
-    font-size: 12px;
-    color: #000000;
-}
-
-#sec-btn:hover {
-    background-color: #CCCCCC;
-}
-
-
-
-
-#preview-section{
-    padding: 54px 24px 108px 24px;
-
-}
-
-#preview-cards{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-
-}
-
-#preview-cards-child{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: auto;
-    height: 48px;
-    width: 187.500px;
-
-}
-
-#preview-cards-child img{
-    height: 48px;
-    width: 187.500px;
-}
-
-
-#inti{
-    display: flex;
-    /* flex-direction: column; */
-    justify-content: center;
-    align-items: center;
-
-}
-
-#inti-child{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap:16px;
-    padding: 36px 24px;
-    width: 50%;
-}
-
-#feature{
-    /* display: flex;
-    flex-direction: column; */
-    width: 50%;
-
-}
-
-#feature-cards{
-    display: flex;
-    flex-direction: column;
-    border: 1px solid red;
-    border-radius: 5px;
-    padding: 2%;
-    gap:16px;
 }
