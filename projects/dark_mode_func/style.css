@@ -2,6 +2,7 @@ body{
     margin:0;
     height:100vh;
     display:flex;
+    flex-direction: column;
     justify-content:center;
     align-items:center;
     background:#f4f4f4;
@@ -11,6 +12,7 @@ body{
 
 .container{
     text-align:center;
+    margin: 10px;
 }
 
 button{
@@ -37,6 +39,6 @@ button:hover{
 
 .dark button {
     background-color: #fe9332;
-    color: #ffffff ;
+    color: #121212;
 
 }
