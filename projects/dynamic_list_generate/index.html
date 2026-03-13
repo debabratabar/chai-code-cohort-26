@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO APP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/chai_icon.png" type="image/x-icon">
+</head>
+<body>
+        <div class="container">
+        <img src="assets/chai_icon.png" alt="chai-icon" height="200px" width="200px">
+
+             
+    <h1 >
+        TO-DO APP
+    </h1>
+            <input type="text" placeholder="Enter your task..." id="taskInput">
+             <!-- <label for="job">Select Occupation :</label> -->
+            <select name="job" id="priority-check">
+            <option disabled selected >Choose option: </option>
+            <option value="imp">Important</option>
+            <option value="notimp">Non-Important</option>
+        </select> 
+
+            <button id="addButton">Add Task </button>
+            <br>
+            <ul id="task-list">
+
+            </ul>
+        </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
