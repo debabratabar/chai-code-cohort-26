@@ -1,10 +1,10 @@
-const testInputField = document.getElementById('taskInput')
+window.addEventListener('DOMContentLoaded' , () => {
+
+
+    const testInputField = document.getElementById('taskInput')
 const addBtn = document.getElementById('addButton')
 const taskList = document.getElementById('task-list')
 const priorityTag = document.getElementById('priority-check')
-
-
-
 
 
 addBtn.addEventListener('click' , ()=>{
@@ -16,7 +16,7 @@ addBtn.addEventListener('click' , ()=>{
     }
 
     const listTag = document.createElement('li')
-    const taskField = document.createElement('h3')
+    let taskField = document.createElement('h3')
     const divBtn = document.createElement('div')
     const deleteBtn = document.createElement('button')
     const editbutton = document.createElement('button')
@@ -54,7 +54,7 @@ addBtn.addEventListener('click' , ()=>{
 
     taskField.replaceWith(inputFieldTag)
     
-    window.addEventListener('keypress' , (event) =>{
+    inputFieldTag.addEventListener('keypress' , (event) =>{
         if ( event.key=== 'Enter') {
             event.preventDefault();
             const newTask = inputFieldTag.value
@@ -62,10 +62,13 @@ addBtn.addEventListener('click' , ()=>{
             taskField1.textContent = newTask
 
             inputFieldTag.replaceWith(taskField1)
+            taskField = taskField1
 
         }
     })
     
     })
     
+})
+
 })
